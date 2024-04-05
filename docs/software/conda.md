@@ -1,6 +1,6 @@
 # Python and Conda
 
-Farm and Peloton clusters have Python software available in Conda. Users can load it and use it by entering the following commands:
+HPC clusters have Python software available in Conda. Users can load it and use it by entering the following commands:
 
 `module load conda`
 
@@ -19,11 +19,16 @@ You can install your required conda package using the following commands
 
 `conda activate [name of environment]`
 
-Note that you can leave off the -c bioconda, because the system-wide conda configuration already has the bioconda channel configured as well as conda-forge
+Note that you can leave off the `-c bioconda`, because the system-wide conda configuration already has the bioconda channel configured as well as conda-forge
 
-You can also replace conda with mamba in the create phase, it will solve the environment much more quickly. When the environment is active, you can run the following command to see that it lives in your home directory:
+You can also replace `conda` with `mamba` in the create phase, it will solve the environment much more quickly. When the environment is active, you can run the following command to see that it lives in your home directory:
 
 `echo $CONDA_PREFIX`
 
-If you can't find a piece of software on the cluster, you can request an installation for cluster-wide use. Contact the hpc-help@ucdavis.edu with the name of the cluster, your username, the name of the software, and a link 
+If you can't find a piece of software on the cluster, you can request an installation for cluster-wide use. Contact the <hpc-help@ucdavis.edu> with the name of the cluster, your username, the name of the software, and a link 
 to the software's website, documentation, or installation directions, if applicable.
+HPCCf has deployed a new policy for software installation that goes in effect from February 16, 2024:-
+
+Read details on this link:-
+
+<https://hpc.ucdavis.edu/software-installation-policy>
